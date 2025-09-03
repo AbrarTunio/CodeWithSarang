@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .element{
+            width: 100px;
+            height: 100px;
+            transform: skew(5deg);
+        }
+
+        .one{
+            background-color:orangered;
+            transition: 1s;
+        }
+
+        .one:hover{
+            position: relative;
+            z-index: 1;
+            transition: 1s;
+            margin-left: -10px;
+        }
+
+        .two{
+            background-color: burlywood;
+            margin-top: -20px;
+            margin-left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element one">One</div>
+        <div class="element two">Two</div>
+    </div>
+    
+</body>
+</html>

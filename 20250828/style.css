@@ -1,0 +1,7 @@
+.bg-pink {
+  background-color: rgb(231, 15, 162);
+}
+
+.bg-custom-img {
+  background-image: url("https://picsum.photos/700");
+}

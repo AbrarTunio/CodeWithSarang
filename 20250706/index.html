@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        
+        th, td , h1 {
+            border: 1px solid;
+        }
+
+        h1 , table{
+            text-align: center;
+            width: 300px;
+            margin: auto;
+        }     
+
+    </style>
+</head>
+<body>
+    <h1>Tables : Lecture 2</h1>
+    <!-- Table Starts  -->
+    <table>
+        <thead>
+            <tr>
+                <th>Sno.</th>
+                <th>Pictures</th>
+                <th colspan="2">Name</th>
+                <!-- <th>Fname</th> -->
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td> <img src="https://picsum.photos/seed/32165546/50" alt=""> </td>
+                <td>Aslam</td>
+                <td>Fida</td>
+                <td>001</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td> <img src="https://picsum.photos/seed/62185546/50" alt=""> </td>
+                <td>Hussain</td>
+                <td rowspan="2">Naseer Ahmed</td>
+                <td>002</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td> <img src="https://picsum.photos/seed/92265546/50" alt=""> </td>
+                <td>Moomal</td>
+                <!-- <td>Naseer Ahmed</td> -->
+                <td>003</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td> <img src="https://picsum.photos/seed/12165546/50" alt=""> </td>
+                <td>Ali Raza</td>
+                <td>M. Bux</td>
+                <td>004</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Sno.</th>
+                <th>Pictures</th>
+                <th>Name</th>
+                <th>Fname</th>
+                <th>Roll Number</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- Table Ends -->
+     <!-- Videos -->
+    <div>
+     <video src="deva.mkv" width="300" controls loop autoplay muted ></video>  
+    </div>
+
+    <div>
+        <audio src="" controls></audio>
+    </div>
+    <h1>Embedding</h1>
+    <div>
+        <iframe width="360" src="https://www.youtube.com/embed/UwmIOhMbKP8?si=eShaErFLMWfSabYI" title="Python For AI and Automation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.2328037687353!2d68.33754217489698!3d25.397016723579124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c715356bc50db%3A0xd765b5a8a268ebdb!2sTechBridge%20Institute%20%E2%80%93%20Best%20Job-Oriented%20IT%20Training%20%26%20Software%20House%20in%20Qasimabad%2C%20Hyderabad!5e0!3m2!1sen!2s!4v1751797634138!5m2!1sen!2s" width="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section>
+        <h3>A Page from previous lecture</h3>
+        <iframe width="600" height="600" src="../20250701/index.html" frameborder="0"></iframe>
+    </section>
+
+</body>
+</html>

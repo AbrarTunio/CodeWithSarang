@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="border border-danger">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        Enable body scrolling
+      </button>
+    </nav>
+    <div class="container">
+      <!-- title section start  -->
+      <div class="row my-5 text-center">
+        <h1>Complete Webpage</h1>
+        <p>
+          In this lecture we will try to explore rest of the components and
+          utilities... from bootstrap
+        </p>
+      </div>
+      <!-- title section ends -->
+      <!-- services section start  -->
+      <div class="row my-5">
+        <section class="text-center">
+          <h1>Services</h1>
+          <p>
+            In this section we will show you list of services provided by
+            CodePro
+          </p>
+        </section>
+        <!-- Service ONe -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/seed/2316/500"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Web, Some quick example text to build on the card title and make
+                up the bulk of the card’s content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#serviceOne"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Two -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/seed/2326/500"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">
+                DM, Some quick example text to build on the card title and make
+                up the bulk of the card’s content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#serviceTwo"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Three -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/seed/2116/500"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Agentic AI</h5>
+              <p class="card-text">
+                AAI, Some quick example text to build on the card title and make
+                up the bulk of the card’s content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#serviceThree"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services section ends  -->
+      <!-- Section three of FAQs Starts Here -->
+      <div class="row my-5">
+        <section class="text-center">
+          <h1>FAQs</h1>
+          <p>
+            These are some frequently asked questions regarding our service by
+            clients ...
+          </p>
+        </section>
+        <div class="col-12">
+          <div class="accordion" id="accordionFAQ">
+            <!-- FAQ One -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Do you provide trainings?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  Yes, we do provide training and development services.. etc.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ One ends -->
+
+            <!-- FAQ One -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  How much do you charge for a software?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  We normally charge for a software from 100K to 800K depending
+                  upon requiremnents
+                </div>
+              </div>
+            </div>
+            <!-- FAQ One ends -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Section three of FAQs Ends Here -->
+      <!-- section of social icons and display flex -->
+      <div class="row my-5">
+        <div class="col">
+          <div class="social-platforms d-flex justify-content-center">
+            <div class="social-item px-5">
+              <i class="fa-brands fa-facebook"></i> Facebook
+            </div>
+            <div class="social-item px-5">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </div>
+            <div class="social-item px-5">
+              <i class="fa-brands fa-linkedin"></i> Linkedin
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section of social icons and display flex ends here -->
+
+      <!-- Final section of positions -->
+      <div class="row my-5">
+        <div
+          class="col-sm-6 border rounded border-primary"
+          style="height: 200px"
+        >
+          <div
+            class="ball rounded-circle bg-primary"
+            style="width: 50px; height: 50px">
+        </div>
+      </div>
+    </div>
+
+    <!-- MY MODALS FOR THIS PAGE WILL BE PLACED HERE -->
+    <!-- MODAL serviceOne starts-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="serviceOne"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="serviceOneLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="serviceOneLabel">
+              Web Development
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            ullam. Eius dicta, molestias placeat fuga sunt exercitationem amet
+            cupiditate fugiat expedita sed unde quidem ipsa, ea eum velit enim
+            dolore.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL serviceOne ends-->
+
+    <!-- MODAL serviceTwo starts-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="serviceTwo"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="serviceTwoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="serviceTwoLabel">
+              Digital Marketing
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            ullam. Eius dicta, molestias placeat fuga sunt exercitationem amet
+            cupiditate fugiat expedita sed unde quidem ipsa, ea eum velit enim
+            dolore.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL serviceTwo ends-->
+
+    <!-- MODAL servicThree starts-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="serviceThree"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      aria-labelledby="serviceThreeLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="serviceThreeLabel">Agentic AI</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            ullam. Eius dicta, molestias placeat fuga sunt exercitationem amet
+            cupiditate fugiat expedita sed unde quidem ipsa, ea eum velit enim
+            dolore.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL serviceThree ends-->
+
+    <!-- ALL MY OFF CANVAS WILL GO HERE -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          Offcanvas with body scrolling
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

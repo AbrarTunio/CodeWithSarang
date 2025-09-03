@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            border: 2px solid orangered;
+            background-color: aquamarine;
+            
+        }
+
+        .first{
+            position: relative;
+            z-index: 4;
+        }
+
+        .second{
+            background-color: cadetblue;
+            height: 1000px;
+            width: 300px;
+            margin: auto;
+            margin-top: -40px;
+        }
+
+        .box{
+            background-color: brown;
+            width: fit-content;
+            color: azure;
+            padding: 10px;
+            position: fixed;
+            top: 50px;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container first">
+        <div class="box">
+            sticky
+        </div>
+    </div>
+
+    <div class="container second">
+        
+    </div>
+</body>
+</html>

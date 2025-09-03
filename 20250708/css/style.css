@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: orange;
+    border: 1px solid;
+}
+
+nav a {
+    text-decoration: none;
+    border: 0.5px solid;
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 10px ;
+}

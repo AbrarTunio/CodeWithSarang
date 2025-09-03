@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            animation-name: box-move-right;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            position: absolute;
+        }
+
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: maroon;
+            animation-name: box-move-left;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            position: absolute;
+        }
+
+        @keyframes box-move-right {
+            /* to{
+                margin-left: 300px;
+                width: 5px;
+                height: 5px;
+                transform: rotate(360deg);
+            } */
+
+            25%{
+                margin-left: 300px;
+                margin-top: 0px;
+            }
+
+            50%{
+                margin-left: 300px;
+                margin-top: 200px;
+            }
+
+            75%{
+                margin-left: 0;
+                margin-top: 200px;
+            }
+        }
+
+        @keyframes box-move-left {
+            /* to{
+                margin-left: 300px;
+                width: 5px;
+                height: 5px;
+                transform: rotate(360deg);
+            } */
+
+            25%{
+                margin-left: 300px;
+                margin-top: 0px;
+            }
+
+            50%{
+                margin-left: 300px;
+                margin-top: 200px;
+            }
+
+            75%{
+                margin-left: 0;
+                margin-top: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Animations using CSS</h1>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

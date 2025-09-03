@@ -1,0 +1,36 @@
+* , html{
+    scroll-behavior: smooth;
+}
+
+.title{
+    color: green;
+}
+
+section{
+    margin: 10px 0px;
+}
+
+article{
+    border: 0.5px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section article h1{
+    color: blue;
+}
+
+section article p{
+    color: gray;
+    border: 0.5px solid;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+a{
+    background-color: blue;
+    padding: 3px 5px;
+    border-radius:10px ;
+    color: white;
+    text-decoration: none;
+}

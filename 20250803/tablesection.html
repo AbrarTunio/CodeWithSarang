@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        .container{
+            border: 0.5px solid gray;
+            border-radius: 20px;
+            background-color: rgb(255, 250, 244);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .parent{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .col{
+            /* border: 1px solid; */
+            padding: 10px 20px;
+        }
+
+        .col ul{
+            list-style-type: none ;
+            padding: 0;
+        }
+
+        .c-green{
+            color: green;
+        }
+
+        ul li{
+            padding: 5px 5px;
+            
+        }
+        li i {
+            padding: 0px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Every plan <span class="c-green"> has everything you need </span> and more</h1>
+        <section class="parent">
+            <div class="col">
+                <ul>
+                    <li><i class="fa-regular c-green fa-circle-check"></i>Unlimited workflows</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>Unlimited concurrent executions</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>Unlimited concurrent executions</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>n8n with queue mode</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>n8n with 100 pre-made workflows</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>One-click n8n installation</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>Hostinger API n8n community node</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>AI assistant powered by MCP</li>
+                    <li><i class="fa-regular fa-circle-check c-green"></i>Free weekly backups</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

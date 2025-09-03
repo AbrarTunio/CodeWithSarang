@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://picsum.photos/1000") ;
+}
+
+h1 {
+    color: rgb(173, 25, 25);
+}
+
+section{
+    border: 1px solid ;
+    height: 100px;
+}
+
+.one{
+    background-color:  rgb(173, 25, 25 , 0.5);
+}
+

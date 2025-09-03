@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Registration Forms</h1> 
+     
+     <form action="" method="GET" enctype="multipart/form-data">
+        
+        <div class="">
+            <label for="uname">Username</label>
+            <input type="text" id="uname" name="uname" required placeholder="Username">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" required placeholder="Password">
+        </div>
+        <br>
+        <div>
+            <label for="">Email :</label>
+            <input type="email" >
+        </div>
+        <div>
+            <p>Select Your Gender?</p>
+            <div>
+                <input type="radio" checked name="gender" id="m"> 
+                <label for="m">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="f"> 
+                <label for="f">Female</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <p>Select you fav country</p>
+            <input type="checkbox" name="australia" id="aus">
+            <label for="aus">Australia</label> 
+            <input type="checkbox" name="pakistan" id="pak">
+            <label for="pak"> Pakistan</label>
+            <input type="checkbox" name="usa" id="usa">
+            <label for="usa">USA</label>
+        </div>
+        <br>
+        <div>
+            <p>Choose any course?</p>
+            <select name="na[]" id="" multiple>
+                <option value="" selected disabled >---Select any one-----</option>
+                <option style="background-color: orange;" value="python">Python Programming</option>
+                <option value="html-css">HTML and CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="file" name="profile_img">
+        </div>
+        <div>
+            <p>Regisration Date</p>
+            <input type="datetime-local" name="date">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Login">
+        </div>
+        <br>
+
+     </form>
+
+</body>
+</html>
