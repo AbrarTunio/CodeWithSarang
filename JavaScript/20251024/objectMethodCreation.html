@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object Method Creation</h1>
+    <script>
+      const person = {
+        name: "Ahmed",
+        age: 25,
+
+        greet: function () {
+          console.log("Hello", this.name);
+        },
+      };
+
+      const personNew = {
+        name: "Wali",
+        age: 25,
+
+        greet() {
+          console.log("Asalam O Alekum", this.name);
+        },
+      };
+
+      person.greet();
+      personNew.greet();
+      //   function greet(Xyz) {
+      //     console.log("Hello", Xyz);
+      //   }
+
+      //   greet = function (Xyz) {
+      //     console.log("Hello", Xyz);
+      //   };
+
+      //   greet = (Xyz) => {
+      //     onsole.log("Hello", Xyz);
+      //   };
+    </script>
+  </body>
+</html>

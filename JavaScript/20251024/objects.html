@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>JS Objects</h3>
+    <script>
+      carList = ["Suzuki", "Mehran", 2025];
+
+      const car = {
+        brand: "Suzuki",
+        model: "Mehran",
+        year: 2025,
+      };
+
+      console.log(car["year"]);
+      console.log(car.model);
+      console.log(car);
+
+      carList[0] = "Toyota";
+      car.brand = "Toyota";
+
+      console.log(car);
+
+      delete car.years;
+
+      console.log(car);
+      console.log(deletedValue);
+    </script>
+  </body>
+</html>

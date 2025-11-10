@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      colors = ["blue", "orange", "green", "Yellow"];
+      colors.push("maroon");
+      colors.unshift("pink");
+
+      // METHOD ONE
+      //   for (s = 0; s < colors.length; s++) {
+      //     console.log(colors[s]);
+      //   }
+
+      // METHOD TWO
+      //   for (s of colors) {
+      //     console.log(s);
+      //   }
+
+      names = ["Sarang", "Abrar", "Moiz", "Rabeet"];
+
+      for (name of names) {
+        console.log("Hi,", name);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let car = {
+        brand: "Toyota",
+        model: "Corolla",
+        year: 2020,
+        description: function () {
+          console.log(
+            "The brand of car is",
+            this.brand,
+            "and it is operated by",
+            this.owner
+          );
+        },
+      };
+
+      console.log(car["brand"]); // Extracting data from Object
+      console.log(car.brand);
+
+      //   Modifying data into object
+      car["brand"] = "Suzuki";
+      car.brand = "Suzuki";
+
+      //   Adding values in object
+      car.owner = "Abrar Hussain";
+
+      //   Delete a value from Object
+      delete car.year;
+      -console.log(car.description());
+
+      car.owner = "Sarang";
+
+      console.log(car.description());
+    </script>
+  </body>
+</html>

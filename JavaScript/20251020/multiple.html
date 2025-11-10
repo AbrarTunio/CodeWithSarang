@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Function with Multiple Arguments/Inputs/Parameters</h1>
+
+    <script>
+      //   Creation of function One
+      function calc(a, b, ops) {
+        // if (ops == "+") {
+        //   return a + b;
+        // } else if (ops == "-") {
+        //   return a - b;
+        // } else if (ops == "*") {
+        //   return a * b;
+        // }
+        switch (ops) {
+          case "+":
+            return a + b;
+          case "-":
+            return a - b;
+          case "*":
+            return a * b;
+        }
+      }
+
+      //   Creation of Function Two
+
+      function square(n) {
+        return n * n;
+      }
+
+      num1 = Number(prompt("Enter value 1: "));
+      num2 = Number(prompt("Enter value 2: "));
+      ops = prompt("Enter the operation");
+
+      console.log(
+        `The operation(${ops}) of ${num1}, ${num2} is:`,
+        calc(num1, num2, ops)
+      );
+
+      previousOutput = calc(num1, num2, ops);
+      sqr = square(previousOutput);
+
+      console.log(`The square of 
+          ${previousOutput} is: ${sqr}`);
+    </script>
+  </body>
+</html>

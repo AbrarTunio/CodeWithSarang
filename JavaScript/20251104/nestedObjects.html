@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Nested Objects</h1>
+    <script>
+      const student = {
+        name: "Ayesha",
+        fathersName: "Muhammad Ali",
+
+        marks: {
+          math: 85,
+          english: 90,
+        },
+      };
+
+      //   console.log("Student name is", student.name);
+      console.log("Student name is", student["name"]);
+      console.log(student.name, "has secured", student.marks.math, "marks");
+    </script>
+  </body>
+</html>

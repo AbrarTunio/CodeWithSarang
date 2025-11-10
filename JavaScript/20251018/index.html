@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Step 1: Declartion
+      function greet(uname = "Foo bar") {
+        return "Welcome " + uname + "!";
+      }
+
+      //   xyz = prompt("Insert any name!");
+      // Step 2: Calling a function
+      output = greet();
+      //   Frist Case
+      console.log(output);
+      //   SecondCase
+      document.body.innerHTML = output;
+      //   3rd case
+      alert(output);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mehran = {
+        brand: "Suzuki",
+        color: "white",
+        price: 650000,
+
+        sales_price: function () {
+          newprice = this.price - this.price * 0.02;
+          return newprice;
+        },
+      };
+
+      console.log("The actual price is:", mehran.price);
+      console.log("The sales price is:", mehran.sales_price());
+    </script>
+  </body>
+</html>

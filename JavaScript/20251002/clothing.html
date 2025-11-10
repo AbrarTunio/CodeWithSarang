@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let productCategory = prompt("Enter a product category");
+
+      switch (productCategory.toLowerCase()) {
+        case "electronics":
+          console.log(`You selected ${productCategory} section`);
+          break;
+        case "clothing":
+          console.log(`You selected ${productCategory} section`);
+          break;
+        case "grocery":
+          console.log(`You selected ${productCategory} section`);
+          break;
+        case "books":
+          console.log(`You selected ${productCategory} section`);
+          break;
+        default:
+          console.log(
+            `You selected ${productCategory} section and it is not available`
+          );
+      }
+    </script>
+  </body>
+</html>
