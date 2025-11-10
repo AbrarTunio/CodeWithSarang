@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Method 2</h1>
+
+    <button id="myBtn">Click Me</button>
+
+    <script>
+      //  defining a function
+
+      document.getElementById("myBtn").onclick = function greet() {
+        document.querySelector("h1").innerHTML = `I am called`;
+      };
+    </script>
+  </body>
+</html>
