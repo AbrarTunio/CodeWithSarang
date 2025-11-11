@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form Behaviour Prevention</h1>
+    <form id="contactForm">
+      <input
+        type="text"
+        name="username"
+        id="name"
+        placeholder="Enter your name"
+      />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      let form = document.getElementById("contactForm");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let userNameValue = document.getElementById("name").value;
+
+        if (userNameValue == "") {
+          alert("Username is required");
+        } else {
+          alert(`Your name: ${userNameValue} is recorded`);
+        }
+      });
+    </script>
+  </body>
+</html>

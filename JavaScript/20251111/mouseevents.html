@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse Events</h1>
+    <div class="box"></div>
+    <script>
+      let box = document.querySelector(".box");
+
+      box.addEventListener("mouseover", () => {
+        box.style.backgroundColor = "green";
+      });
+
+      box.addEventListener("mouseout", () => {
+        box.style.backgroundColor = "red";
+      });
+
+      document.addEventListener("click", (e) => {
+        console.log(e.clientX, e.clientY);
+      });
+
+      document.addEventListener("keypress", (e) => {
+        console.log(e.key);
+      });
+    </script>
+  </body>
+</html>
